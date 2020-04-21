@@ -24,10 +24,11 @@ namespace Dan_XXI_Zadatak
                 "Count money (coins and bills)",
                 "Get name initials",
                 "Replace the reference word in the sentence with the word \"programming\"",
-                "Guess the word you entered"
+                "Guess the word you entered",
+                "Exit"
             }
             };
-            mainMenu.CreateMenu(optionsForMainMenu, "Welcome! Choose an option below:");
+            mainMenu.CreateMenu(optionsForMainMenu, "\nWelcome! Choose an option below:");
         }
     }
 }

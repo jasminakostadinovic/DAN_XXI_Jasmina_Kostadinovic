@@ -46,8 +46,11 @@
     <Compile Include="Interfaces\IMenu.cs" />
     <Compile Include="Models\Menus\MainMenu.cs" />
     <Compile Include="Models\Menus\MenuOptions.cs" />
+    <Compile Include="Models\Money\MoneyType.cs" />
+    <Compile Include="Models\Money\RSDMoney.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validations\HelpMethods.cs" />
     <Compile Include="Validations\UserInputValidation.cs" />
   </ItemGroup>
   <ItemGroup>
