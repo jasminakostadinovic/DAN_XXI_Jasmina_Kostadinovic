@@ -24,7 +24,7 @@ namespace Dan_XXI_Zadatak
                 "Count money (coins and bills)",
                 "Get name initials",
                 "Replace the reference word in the sentence with the word \"programming\"",
-                "Guess the word you entered",
+                "hangman game",
                 "Exit"
             }
             };

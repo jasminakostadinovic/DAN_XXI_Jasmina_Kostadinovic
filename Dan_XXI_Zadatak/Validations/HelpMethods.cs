@@ -130,6 +130,34 @@ namespace Dan_XXI_Zadatak.Validations
             return consoleInput;
         }
 
+
+        internal static string GetSingleLetter(string message)
+        {
+            string consoleInput;
+            bool shouldRepeat;
+            do
+            {
+                shouldRepeat = false;
+                Console.WriteLine(Program.escapeMessage);
+                Console.WriteLine(message);
+
+                consoleInput = Console.ReadLine();
+                if (consoleInput == Program.escapeSign)
+                    continue;
+                if (string.IsNullOrWhiteSpace(consoleInput) ||
+                    !Regex.IsMatch(consoleInput, @"^[a-zA-Z]+$")
+                    || consoleInput.Length > 1)
+                {
+                    Console.WriteLine("Wrong input! Please try again.");
+                    shouldRepeat = true;
+                    continue;
+                }
+
+                shouldRepeat = false;
+            } while (shouldRepeat);
+            return consoleInput;
+        }
+
         public static bool IsRequredNumberOfWords(string s, int numberOfWords)
         {
             if (string.IsNullOrEmpty(s))

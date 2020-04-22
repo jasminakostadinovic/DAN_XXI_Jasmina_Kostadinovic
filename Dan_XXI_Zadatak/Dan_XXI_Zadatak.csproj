@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IMenu.cs" />
+    <Compile Include="Models\GuessingGame\Leter.cs" />
+    <Compile Include="Models\GuessingGame\Word.cs" />
     <Compile Include="Models\Menus\MainMenu.cs" />
     <Compile Include="Models\Menus\MenuOptions.cs" />
     <Compile Include="Models\Money\MoneyType.cs" />
